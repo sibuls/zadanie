@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: red;
+}
+
+.header__phone {
+  width: 100%;
+  background-color: green;
+}
+/*# sourceMappingURL=App.css.map */

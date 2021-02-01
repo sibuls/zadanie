@@ -1,9 +1,11 @@
-import './App.css';
+import React from 'react';
+import Header from './layout/Header';
 
 function App() {
   return (
     <div className='App'>
-      <p>Assasin</p>
+      <p>sjdhfjsdhfj</p>
+      <Header />
     </div>
   );
 }

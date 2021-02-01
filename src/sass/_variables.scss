@@ -1,0 +1,48 @@
+// main colors
+
+// fonts sizes
+$xs-font-size: 12px;
+$sm-font-size: 16px;
+$md-font-size: 18px;
+$lg-font-size: 20px;
+
+// font family
+
+// margins
+$main-padding: 20px;
+$main-margin-responsive: 20px;
+$main-spacing: 20px;
+$max-width: 1000px;
+
+// brakpoints
+$breakpoints: (
+  xs: 500px,
+  sm: 800px,
+  md: 1024px,
+  lg: 2000px,
+  phone: (
+    min-width: 460px,
+  ),
+  phone-large: (
+    min-width: 640px,
+  ),
+  tablet: (
+    min-width: 768px,
+  ),
+  tablet-large: (
+    min-width: 1024px,
+  ),
+  desktop: (
+    min-width: 1280px,
+  ),
+  desktop-medium: (
+    min-width: 1600px,
+  ),
+  desktop-large: (
+    min-width: 1900px,
+  ),
+);
+
+// :export {
+
+// }
