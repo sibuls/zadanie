@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../images/header/logo_cut.png';
 
 const Header = () => {
   return (
@@ -27,12 +28,26 @@ const Header = () => {
       <div className='header__main'>
         <div className='menu  menu--top'>
           <div className='menu__container'>
-            <div className='menu__logo'></div>
-            <div className='menu__search'></div>
+            <div className='menu__logo'>
+              <img
+                src={logo}
+                alt='Assasins Arms Shop logo'
+                className='menu__logo-image'
+              />
+            </div>
+            <div className='menu__search'>
+              <input
+                type='text'
+                placeholder='Wpisz czego szukasz...'
+                className='menu__search-input'
+              />
+              <div className='menu__search-ico'>
+                <i class='fas fa-search'></i>
+              </div>
+            </div>
             <div className='menu__language'></div>
-            <div className='menu__account'></div>
-            <div className='menu__basket'></div>
-            top
+            <div className='menu__account'>a</div>
+            <div className='menu__basket'>b</div>
           </div>
         </div>
         <div className='menu menu--middle'>
