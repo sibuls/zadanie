@@ -1,6 +1,15 @@
 .header {
   background-color: red;
+  width: 100vw;
 }
 .header__top-bar {
-  background-color: green;
+  background-color: #2e2e2e;
+  display: flex;
+  width: 100%;
+}
+.header__contact {
+  color: #efefef;
+}
+.header__ico {
+  color: #8c4646;
 }

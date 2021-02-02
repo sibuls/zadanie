@@ -1,6 +1,68 @@
 .header {
-  background-color: red;
+  background-color: $grey-dark;
+  width: 100vw;
+
   &__top-bar {
-    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__container {
+    width: 80%;
+    display: flex;
+    // border: 1px dotted rgb(128, 0, 85);
+
+    &--main {
+      flex-direction: column;
+    }
+  }
+  &__contact {
+    color: $bright;
+    font-family: $font-montserrat;
+    font-size: 11px;
+    padding: $main-padding / 3 $main-padding $main-padding / 2 0;
+  }
+  &__ico {
+    color: $red;
+    padding-right: $main-padding / 2;
+  }
+
+  &__main {
+    width: 100%;
+    height: 140px;
+    min-height: 140px;
+    // border: 4px dotted rgb(128, 70, 0);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+    background-image: url('../images/header/header_bgc.png');
+    // background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  // border: 3px dotted rgb(155, 143, 56);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 80%;
+    // border: green 2px dotted;
+  }
+
+  &--top {
+    height: 50%;
+  }
+  &--middle {
+    background-color: #fff;
+    height: 30%;
+  }
+  &--bottom {
+    height: 20%;
   }
 }

@@ -453,10 +453,52 @@ textarea {
 }
 
 .header {
-  background-color: red;
+  background-color: #2e2e2e;
+  width: 100vw;
 }
 
 .header__top-bar {
-  background-color: green;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__contact {
+  color: #efefef;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  padding: 13.33333px 20px 13.33333px 0;
+}
+
+.header__ico {
+  color: #c32c12;
+  padding-right: 10px;
+}
+
+.header__main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 150px;
+  background-color: #eaeaea;
+}
+
+.header__menu {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
