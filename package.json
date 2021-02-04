@@ -10,7 +10,6 @@
   },
   "author": "sibuls",
   "dependencies": {
-    "firebase": "^8.1.1",
     "jquery": "^3.5.1",
     "react": "^16.14.0",
     "react-card-flip": "^1.0.11",

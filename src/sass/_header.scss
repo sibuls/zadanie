@@ -1,14 +1,19 @@
 .header {
-  background-color: $grey-dark;
   width: 100vw;
-
+  height: 170px;
+  max-width: 1900px;
+  margin: 0 auto;
   &__top-bar {
+    background-color: $grey-dark;
+
     width: 100%;
+    height: 30px;
     display: flex;
     justify-content: center;
   }
   &__container {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
 
     &--main {
@@ -28,11 +33,12 @@
 
   &__main {
     width: 100%;
-    height: 140px;
-    min-height: 140px;
+    height: 100%;
+    // height: 140px;
+    // min-height: 140px;
     background-image: url('../images/header/header_bgc.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: top center;
   }
 }
 
@@ -43,7 +49,8 @@
   justify-content: center;
 
   &__container {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,21 +70,16 @@
   &__logo {
     width: 25%;
 
-    // border: 2px dotted rgb(0, 47, 128);
-    // background-color: #fff;
-
     &-image {
       display: block;
       margin-left: 0;
       margin-right: auto;
       width: 80%;
-      // border: 2px dotted rgb(128, 0, 79);
     }
   }
   &__search {
-    // border: 1px dotted green;
     width: 25%;
-    height: 60%;
+    height: 50%;
 
     display: flex;
 
@@ -103,15 +105,54 @@
     }
   }
   &__language {
-    border: 1px dotted rgb(50, 10, 70);
-    width: 10%;
+    width: 60px;
   }
+
+  &__country {
+    border: none;
+    background-color: transparent;
+
+    font-family: $font-pt;
+    font-weight: bold;
+  }
+
   &__account {
-    border: 1px dotted green;
+    // border: 1px dotted green;
     width: 10%;
+    font-family: $font-pt;
+    font-weight: bold;
   }
   &__basket {
-    border: 1px dotted green;
-    width: 25%;
+    // border: 1px dotted green;
+    // width: 25%;
+    // width: 145px;
+    align-self: flex-start;
+    position: relative;
+    top: -30px; /*  size od top-bar*/
+
+    &-image {
+      width: 180px;
+
+      // position: absolute;
+      // height: 156px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-family: $font-montserrat;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: $main-padding * 4;
+  }
+  &__path {
+    font-family: $font-montserrat;
+
+    padding-right: $main-padding / 2;
+    font-size: 0.6rem;
   }
 }
