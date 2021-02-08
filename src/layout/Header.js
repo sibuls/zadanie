@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useContext, useState, useRef } from 'react';
+import { AppContext } from '../AppContext';
 
 import logo from '../images/header/logo_cut.png';
 import basket from '../images/header/basket.png';
 
 const Header = () => {
+  const { currentLanguage, handleLanguage } = useContext(AppContext);
+
+  const handleCheck = (e) => {
+    handleLanguage(e.target.value);
+  };
+
+  const SwitchCase = (props) => {
+    switch (props.value) {
+      case 'PL':
+        return 'Twoje konto';
+
+      case 'GB':
+        return 'Your Account';
+      case 'DE':
+        return 'Ihr Konto';
+      case 'FR':
+        return 'Votre compte';
+      default:
+        return 'Twoje konto';
+    }
+  };
+
+  const menuList = () => {};
+
   return (
     <div className='header'>
       <div className='header__top-bar'>
@@ -11,17 +36,17 @@ const Header = () => {
           {' '}
           <div className='header__contact'>
             {' '}
-            <i class='fas fa-phone-volume header__ico'></i>
+            <i className='fas fa-phone-volume header__ico'></i>
             <span>Tel: +48 517 989 511</span>
           </div>
           <div className='header__contact'>
             {' '}
-            <i class='fas fa-envelope header__ico'></i>
+            <i className='fas fa-envelope header__ico'></i>
             <span>Email: sklep@assasins-arms.com</span>
           </div>
           <div className='header__contact'>
             {' '}
-            <i class='fab fa-facebook-f header__ico'></i>
+            <i className='fab fa-facebook-f header__ico'></i>
             <span>assasinsarms</span>
           </div>
         </div>
@@ -44,20 +69,28 @@ const Header = () => {
                 className='menu__search-input'
               />
               <div className='menu__search-ico'>
-                <i class='fas fa-search'></i>
+                <i className='fas fa-search'></i>
               </div>
             </form>
 
-            <div className='menu__language'>
-              <select className='menu__country'>
+            <form className='menu__language'>
+              <select
+                name='language'
+                id='language-select'
+                className='menu__country'
+                onChange={(e) => handleCheck(e)}
+                // value='sdf'
+              >
                 <option value='PL'>PL 🇵🇱 </option>
                 <option value='GB'>GB 🇬🇧 </option>
                 <option value='DE'>DE 🇩🇪 </option>
-                <option value='GB'>FR 🇫🇷 </option>
+                <option value='FR'>FR 🇫🇷 </option>
               </select>
-            </div>
+            </form>
 
-            <div className='menu__account'>Twoje konto</div>
+            <div className='menu__account'>
+              <SwitchCase value={currentLanguage} />
+            </div>
             <div className='menu__basket'>
               <img src={basket} alt='basket' className='menu__basket-image' />
             </div>
@@ -69,25 +102,25 @@ const Header = () => {
               <li className='menu__item'>
                 sprzęt{' '}
                 <span>
-                  <i class='fas fa-angle-down'></i>
+                  <i className='fas fa-angle-down'></i>
                 </span>
               </li>
               <li className='menu__item'>
                 odzież{' '}
                 <span>
-                  <i class='fas fa-angle-down'></i>
+                  <i className='fas fa-angle-down'></i>
                 </span>
               </li>
               <li className='menu__item'>
                 kulki{' '}
                 <span>
-                  <i class='fas fa-angle-down'></i>
+                  <i className='fas fa-angle-down'></i>
                 </span>
               </li>
               <li className='menu__item'>
                 wyprzedaże{' '}
                 <span>
-                  <i class='fas fa-angle-down'></i>
+                  <i className='fas fa-angle-down'></i>
                 </span>
               </li>
             </ul>
