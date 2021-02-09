@@ -3,6 +3,8 @@ import { AppContext } from '../AppContext';
 
 import logo from '../images/header/logo_cut.png';
 import basket from '../images/header/basket.png';
+import Navbar from '../components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Header = () => {
   const { currentLanguage, handleLanguage } = useContext(AppContext);
@@ -97,7 +99,8 @@ const Header = () => {
           </div>
         </div>
         <div className='menu menu--middle'>
-          <div className='menu__container'>
+          <Navbar />
+          {/* <div className='menu__container'>
             <ul className='menu__list'>
               <li className='menu__item'>
                 sprzęt{' '}
@@ -124,7 +127,7 @@ const Header = () => {
                 </span>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className='menu menu--bottom'>
           <div className='menu__container'>

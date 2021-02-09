@@ -140,19 +140,83 @@
 
   &__list {
     display: flex;
+    // border: 1px solid rgb(58, 152, 39);
+    height: 100%;
+
+    align-items: center;
   }
 
   &__item {
+    position: relative;
     font-family: $font-montserrat;
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin-right: $main-padding * 4;
+    margin-right: $main-padding * 3;
+    border-bottom: 3px solid white;
+    display: block;
+    height: 100%;
+    align-items: center;
+    display: flex;
+
+    &:hover {
+      border-bottom: 3px solid #c32c12;
+    }
   }
+
   &__path {
     font-family: $font-montserrat;
 
     padding-right: $main-padding / 2;
     font-size: 0.6rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-family: $font-montserrat;
+    font-size: 0.8rem;
+    line-height: 15px;
+    padding: $main-padding / 2;
+    display: block;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 100%;
+    margin-top: 3px;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    padding: $main-padding / 2 0;
+    left: -($main-padding / 2);
+
+    &--active {
+      display: block;
+    }
+  }
+
+  // [aria-current] {
+  //   background-color: #ceada7;
+  // }
+  &__subitem {
+    display: block;
+    min-width: 200px;
+
+    &:hover {
+      background-color: #c32c12;
+    }
+
+    // padding-right: $main-padding * 4;
+  }
+
+  &__arrow-down {
+    padding-left: $main-padding / 4;
   }
 }
