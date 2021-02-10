@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from './layout/Header';
 import { AppContext, defaultObject } from './AppContext';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './components/Navbar';
+
+import Main from './layout/Main';
 
 const App = () => {
   //hooks
@@ -28,6 +29,7 @@ const App = () => {
         >
           {' '}
           <Header />
+          <Main />
         </AppContext.Provider>
       </div>
     </Router>

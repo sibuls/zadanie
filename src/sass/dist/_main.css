@@ -1,0 +1,15 @@
+.main {
+  background-color: #eddede;
+  display: flex;
+  height: 60vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zoom {
+  width: 50%;
+}
+
+.shopping {
+  width: 50%;
+}

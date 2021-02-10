@@ -100,34 +100,6 @@ const Header = () => {
         </div>
         <div className='menu menu--middle'>
           <Navbar />
-          {/* <div className='menu__container'>
-            <ul className='menu__list'>
-              <li className='menu__item'>
-                sprzęt{' '}
-                <span>
-                  <i className='fas fa-angle-down'></i>
-                </span>
-              </li>
-              <li className='menu__item'>
-                odzież{' '}
-                <span>
-                  <i className='fas fa-angle-down'></i>
-                </span>
-              </li>
-              <li className='menu__item'>
-                kulki{' '}
-                <span>
-                  <i className='fas fa-angle-down'></i>
-                </span>
-              </li>
-              <li className='menu__item'>
-                wyprzedaże{' '}
-                <span>
-                  <i className='fas fa-angle-down'></i>
-                </span>
-              </li>
-            </ul>
-          </div> */}
         </div>
         <div className='menu menu--bottom'>
           <div className='menu__container'>

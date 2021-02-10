@@ -3,6 +3,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  // border: blue 2px dotted;
 
   &__container {
     width: 100%;
@@ -73,30 +74,23 @@
   }
 
   &__account {
-    // border: 1px dotted green;
     width: 10%;
     font-family: $font-pt;
     font-weight: bold;
   }
   &__basket {
-    // border: 1px dotted green;
-    // width: 25%;
-    // width: 145px;
     align-self: flex-start;
     position: relative;
     top: -30px; /*  size od top-bar*/
 
     &-image {
       width: 180px;
-
-      // position: absolute;
-      // height: 156px;
     }
   }
 
   &__list {
     display: flex;
-    // border: 1px solid rgb(58, 152, 39);
+
     height: 100%;
 
     align-items: center;
@@ -158,9 +152,6 @@
     }
   }
 
-  // [aria-current] {
-  //   background-color: #ceada7;
-  // }
   &__subitem {
     display: block;
     min-width: 200px;
@@ -168,8 +159,6 @@
     &:hover {
       background-color: #c32c12;
     }
-
-    // padding-right: $main-padding * 4;
   }
 
   &__arrow-down {

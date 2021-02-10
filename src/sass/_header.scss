@@ -1,8 +1,9 @@
 .header {
   width: 100vw;
-  height: 170px;
+  // height: 203px;
   max-width: 1900px;
   margin: 0 auto;
+  border: 2px dotted green;
   &__top-bar {
     background-color: $grey-dark;
 
@@ -33,8 +34,8 @@
 
   &__main {
     width: 100%;
-    height: 100%;
-    // height: 140px;
+    // height: 100%;
+    height: 170px;
     // min-height: 140px;
     background-image: url('../images/header/header_bgc.png');
     // background-repeat: no-repeat;
