@@ -5,4 +5,17 @@
   max-width: 1200px;
   margin: $main-padding auto;
   border: 1px red dotted;
+  z-index: -1;
+}
+
+.text {
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: #c32c12;
 }

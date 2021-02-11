@@ -97,7 +97,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: $font-pt;
+  // font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -122,6 +123,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ol,
@@ -476,3 +478,7 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+
+// .green {
+//   color: #8dc63f;
+// }

@@ -1,14 +1,155 @@
 .shopping {
-  width: 50%;
+  width: 40%;
 
   &__title {
     display: block;
-    width: 70%;
+    width: 75%;
     font-family: $font-pt;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     letter-spacing: 0.1rem;
   }
+
+  &__gallery {
+    display: flex;
+    // border: green 1px dotted;
+    width: 100%;
+    justify-content: space-between;
+    margin: $main-padding / 2 0;
+  }
+
+  &__pistol {
+    border: 1px lightgrey solid;
+
+    width: 60px;
+    height: 60px;
+    // border-bottom: 3px solid #fff;
+
+    &:hover {
+      border: none;
+      border-bottom: 3px solid $red;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    padding: $main-padding / 2 0;
+    justify-content: space-between;
+  }
+
+  &__barrel,
+  &__caliber {
+    width: 48%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  &__select {
+    // border: red 1px solid;
+    // padding: $main-padding / 2 0;
+    margin-top: $main-padding / 4;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.producent {
+  text-transform: uppercase;
+  margin: $main-padding / 2 0;
+
+  font-size: 0.8rem;
+
+  &__name {
+    color: $red;
+    font-size: 0.7rem;
+    padding: $main-padding / 4;
+    text-transform: none;
+  }
+
+  &__code {
+    font-size: 0.7rem;
+    padding: $main-padding / 4;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.warehouse {
+  display: flex;
+  line-height: 1rem;
+
+  // justify-content: space-between;
+
+  &__green {
+    background: #8dc63f;
+
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__stock {
+    padding: 0 $main-padding / 2;
+    font-size: 0.7rem;
+    // font-family: $font-lato;
+  }
+  &__time {
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 0.8rem;
+  }
+}
+
+.summary {
+  margin: $main-padding 0;
+  display: flex;
+  justify-content: space-between;
+  // border: 1px dotted green;
+  &__price {
+    &-old {
+      text-decoration: line-through;
+      font-size: 0.6rem;
+      color: grey;
+      padding: $main-padding / 4 0;
+    }
+    &-new {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+
+  &__counter {
+    border: 1px lightgrey solid;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  &__btn {
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__add {
+    background-image: url('../images/main/basket_add.png');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+
+.compare {
+  border: 2px dotted red;
 }

@@ -75,17 +75,10 @@
 
   &__account {
     width: 10%;
-    font-family: $font-pt;
+    font-family: $font-montserrat;
+    font-size: 0.8rem;
     font-weight: bold;
-  }
-  &__basket {
-    align-self: flex-start;
-    position: relative;
-    top: -30px; /*  size od top-bar*/
-
-    &-image {
-      width: 180px;
-    }
+    text-transform: uppercase;
   }
 
   &__list {
@@ -146,6 +139,7 @@
     background-color: #fff;
     padding: $main-padding / 2 0;
     left: -($main-padding / 2);
+    z-index: 11;
 
     &--active {
       display: block;
@@ -163,5 +157,86 @@
 
   &__arrow-down {
     padding-left: $main-padding / 4;
+  }
+}
+
+.basket {
+  align-self: flex-start;
+  position: relative;
+  top: -30px; /*  size od top-bar*/
+
+  // border: green 1px dotted;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1rem;
+
+  &__image {
+    width: 190px;
+    height: 140px;
+  }
+
+  &__content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    // border: 1px white dotted;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: $main-padding / 2;
+  }
+  &__rank {
+    width: 30%;
+    // height: 100%;
+    // border: rgb(46, 113, 56) 1px dotted;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    & img {
+      height: 100%;
+      // border: rgb(34, 63, 97) 1px dotted;
+    }
+
+    &-image {
+      // border: green 1px dotted;
+      height: 100%;
+    }
+
+    &-circle {
+      // width: 80%;
+
+      color: $red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translate(0%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+  &__summary {
+    // border: green 1px dotted;
+
+    width: 70%;
+    line-height: 1.2rem;
+  }
+  &__text {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &__total {
+    font-size: 1.2rem;
   }
 }

@@ -2,12 +2,25 @@ import React, { useContext, useState, useRef } from 'react';
 import { AppContext } from '../AppContext';
 
 import logo from '../images/header/logo_cut.png';
+import rank from '../images/header/rank.png';
 import basket from '../images/header/basket.png';
 import Navbar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const Header = () => {
-  const { currentLanguage, handleLanguage } = useContext(AppContext);
+  //appContext
+  const {
+    currentLanguage,
+    summaryCounter,
+    summaryNewPrice,
+    basketCounter,
+    basketToPay,
+    handleLanguage,
+  } = useContext(AppContext);
+
+  //hooks
+
+  // const basketCounter = summaryCounter * summaryNewPrice;
 
   const handleCheck = (e) => {
     handleLanguage(e.target.value);
@@ -93,8 +106,29 @@ const Header = () => {
             <div className='menu__account'>
               <SwitchCase value={currentLanguage} />
             </div>
-            <div className='menu__basket'>
-              <img src={basket} alt='basket' className='menu__basket-image' />
+            <div className='basket'>
+              <img src={basket} alt='basket' className='basket__image' />
+              <div className='basket__content'>
+                <div className='basket__rank'>
+                  <div className='basket__rank-image'>
+                    <img src={rank} alt='logo-army' />
+                  </div>
+                  <div className='basket__rank-circle'>
+                    <p> {basketCounter}</p>
+                  </div>
+                </div>
+                <div className='basket__summary'>
+                  <p className='basket__text'>twój koszyk </p>
+                  <p className='basket__total'>
+                    {' '}
+                    {basketToPay.toLocaleString('fr-FR', {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}{' '}
+                    zł
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
