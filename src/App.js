@@ -9,6 +9,7 @@ import AutoPlay from './layout/AutoPlay';
 import Description from './layout/Description';
 import Aside from './layout/Aside';
 import Tips from './layout/Tips';
+import Footer from './layout/Footer';
 
 const App = () => {
   //hooks
@@ -79,6 +80,7 @@ const App = () => {
             <Aside />
           </div>
           <Tips />
+          <Footer />
         </AppContext.Provider>
       </div>
     </Router>

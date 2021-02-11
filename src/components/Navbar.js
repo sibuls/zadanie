@@ -21,6 +21,8 @@ const Navbar = () => {
       submenu1: 'Grom',
       submenu2: 'Commandos',
       submenu3: 'Marines',
+      submenu4: 'Blues',
+      submenu5: 'Top Gun',
     },
     {
       menuName: 'equipment',
@@ -59,6 +61,7 @@ const Navbar = () => {
       // activeClassName: 'menu__item--activee',
       submenu1: 'Karnety',
       submenu2: 'Zestawy',
+      submenu3: 'Kombinezony',
     },
   ];
 
@@ -99,6 +102,12 @@ const Navbar = () => {
               {item.submenu2}
             </NavLink>
           </li>
+          <li className='menu__subitem'>
+            <NavLink to={item.path} className='menu__link'>
+              {item.submenu3}
+            </NavLink>
+          </li>
+
           <li className='menu__subitem'>
             <NavLink to={item.path} className='menu__link'>
               {item.submenu4}
