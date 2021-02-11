@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import Goggle from './Goggle';
+import Goggle from '../components/Goggle';
+import Title from '../components/Title';
 import triangle from '../images/main/triangle.png';
 
 export default class AutoPlay extends Component {
@@ -17,10 +18,7 @@ export default class AutoPlay extends Component {
     };
     return (
       <div className='autoplay'>
-        <div className='autoplay__title'>
-          <img src={triangle} alt='' />{' '}
-          <h2 className='title'>dobierz do kompletu</h2>
-        </div>
+        <Title text='dobierz do kompletu' />
 
         <Slider {...settings}>
           <Goggle />

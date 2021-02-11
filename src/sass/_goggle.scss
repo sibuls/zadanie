@@ -1,0 +1,26 @@
+.goggle {
+  //   border: red 1px solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 60%;
+    align-items: center;
+    border-right: lightgrey 1px solid;
+
+    line-height: 0.8rem;
+    padding-left: $main-padding;
+    padding-right: $main-padding * 3;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    padding: $main-padding / 2 0;
+  }
+  &__price {
+    // border: rgb(45, 12, 136) 1px solid;
+    font-weight: bold;
+  }
+}

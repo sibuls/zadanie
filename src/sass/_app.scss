@@ -1,0 +1,17 @@
+.app {
+  // display: flex;
+  // //   border: 3px green dotted;
+  // flex-wrap: wrap;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.autoplay {
+  width: 100%;
+  margin-bottom: $main-padding;
+}

@@ -1,0 +1,9 @@
+.page-title {
+  display: flex;
+  align-items: center;
+  padding: $main-padding 0;
+
+  & img {
+    padding-right: $main-padding / 2;
+  }
+}

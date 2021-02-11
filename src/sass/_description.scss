@@ -1,0 +1,24 @@
+.description {
+  width: 60%;
+
+  border: green 1px dotted;
+
+  &__content {
+    padding: $main-padding 0;
+  }
+  &__text {
+    line-height: 1.5rem;
+    font-family: 'arial';
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: $font-montserrat;
+    font-weight: 600;
+    padding: $main-padding * 2 0 $main-padding;
+  }
+
+  &__faq {
+  }
+}

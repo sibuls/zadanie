@@ -5,7 +5,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Main from './layout/Main';
 
-import AutoPlay from './components/AutoPlay';
+import AutoPlay from './layout/AutoPlay';
+import Description from './layout/Description';
+import Aside from './layout/Aside';
 
 const App = () => {
   //hooks
@@ -52,7 +54,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className='App'>
+      <div className='app'>
         <AppContext.Provider
           value={{
             currentLanguage: currentLanguage,
@@ -69,8 +71,12 @@ const App = () => {
         >
           {' '}
           <Header />
-          <Main />
-          <AutoPlay />
+          <div className='wrapper'>
+            <Main />
+            <AutoPlay />
+            <Description />
+            <Aside />
+          </div>
         </AppContext.Provider>
       </div>
     </Router>

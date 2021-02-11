@@ -8,10 +8,9 @@ const Goggle = () => {
         <img src={goggleImg} alt='' />
       </div>
       <div className='goggle__container'>
-        <p className='text'>maska empire e-flex</p>
-        <p className='text'>goggle (black)</p>
+        <p className='goggle__text text'>maska empire e-flex goggle (black)</p>
 
-        <p className='goggle__price'></p>
+        <p className='goggle__price'>139,00 zł</p>
       </div>
     </div>
   );
