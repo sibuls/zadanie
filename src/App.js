@@ -5,6 +5,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Main from './layout/Main';
 
+import AutoPlay from './components/AutoPlay';
+
 const App = () => {
   //hooks
 
@@ -68,6 +70,7 @@ const App = () => {
           {' '}
           <Header />
           <Main />
+          <AutoPlay />
         </AppContext.Provider>
       </div>
     </Router>

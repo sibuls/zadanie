@@ -101,7 +101,7 @@ const Shopping = () => {
 
   return (
     <div className='shopping'>
-      <h1 className='shopping__title'>
+      <h1 className='shopping__title title'>
         MARKER TIPPMANN FT- 50 LITE 50 CAL RENTAL (BLACK)
       </h1>
       {producent}
@@ -154,18 +154,51 @@ const Shopping = () => {
           dodaj do koszyka
         </div>
       </div>
-
       <div className='compare'>
+        {' '}
         <div className='compare__logo'>
-          <i class='fas fa-dollar-sign compare__dollar '></i>
-
-          <i class='fas fa-undo compare__undo'></i>
+          {' '}
+          <i class='fas fa-undo compare__ico compare__ico--undo'></i>
+          <i class='fas fa-dollar-sign compare__ico compare__ico--dollar'></i>
         </div>
         <div className='compare__description'>
-          <p className='text'>Znalazłeś ten produkt taniej? </p>
-          <p className='red'></p>
+          <p className='text bold'>Znalazłeś ten produkt taniej? </p>
+          <p className='text red bold'>Wynegocjuj cenę </p>
         </div>
-        <div className='compare__action'>dodaj do porównania</div>
+        <div className='compare__action red bold'>dodaj do porównania</div>
+      </div>
+      <div className='box'>
+        <div className='box__shipping box__container'>
+          <i class='fas fa-shipping-fast ico-normal'></i>
+
+          <div className='box__content'>
+            <p className='text bold'>Darmowa dostawa </p>
+            <p className='text-side'>dla zamówień powyżej 600 zł</p>
+          </div>
+        </div>
+        <div className='box__return box__container'>
+          <i class='fas fa-undo ico-normal'></i>
+
+          <div className='box__content'>
+            <p className='text bold'>zwrot towaru</p>
+            <p className='text-side'>do 14 dni od daty zakupu</p>
+          </div>
+        </div>
+        <div className='box__installment box__container'>
+          <i class='fas fa-percent ico-normal'></i>
+          <div className='box__content'>
+            {' '}
+            <p className='text bold'>zakupy na raty</p>
+            <p className='red'>oblicz ratę >></p>
+          </div>
+        </div>
+        <div className='box__warranty box__container'>
+          <i class='fas fa-award ico-normal'></i>
+          <div className='box__content'>
+            {' '}
+            <p className='text bold'>gwarancja 12 miesięcy</p>
+          </div>
+        </div>
       </div>
     </div>
   );

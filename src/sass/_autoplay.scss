@@ -1,0 +1,18 @@
+.autoplay {
+  max-width: 1200px;
+  margin: $main-padding auto;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: $main-padding 0;
+  }
+
+  & img {
+    padding-right: $main-padding / 2;
+  }
+
+  &__slides {
+    display: flex;
+  }
+}

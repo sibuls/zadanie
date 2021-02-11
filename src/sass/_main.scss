@@ -9,13 +9,34 @@
 }
 
 .text {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+
+.text-side {
+  font-size: 0.6rem;
+  text-transform: lowercase;
 }
 
 .bold {
   font-weight: bold;
+  // font-size: 0.8rem;
 }
 
 .red {
   color: #c32c12;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ico-normal {
+  font-weight: 200;
+}
+
+.title {
+  font-family: $font-montserrat;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
