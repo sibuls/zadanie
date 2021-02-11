@@ -17,10 +17,14 @@
   }
 
   &__pistol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px lightgrey solid;
 
     width: 60px;
     height: 60px;
+    padding-left: 8px;
     // border-bottom: 3px solid #fff;
 
     &:hover {
@@ -133,14 +137,13 @@
 
   &__add {
     background-image: url('../images/main/basket_add.png');
-    color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     width: 35%;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: 600;
+    cursor: pointer;
   }
 }
 

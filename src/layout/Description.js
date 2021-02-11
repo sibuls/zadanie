@@ -1,5 +1,7 @@
 import React from 'react';
 import Title from '../components/Title';
+import Faq from '../components/Faq';
+// import ask from '../images/main/ask.png';
 
 const pointsArray = [
   'kompaktowy militarny wygląd',
@@ -46,8 +48,26 @@ const Description = () => {
 
       <h3 className='description__title'>nasi klienci pytali o:</h3>
 
-      <div className='description__faq'></div>
-      <h3 className='description__title'>nie znalazłeś odpowiedzi?</h3>
+      <div className='description__faq'>
+        <Faq
+          question1={'Czy ten pistolet jest idealny do gry w paintballa?'}
+          question2={'Czy ten model posiada mechanizm spustowy ?'}
+          question3={'Jakie dobrać naboje do tego sprzętu?'}
+          question4={'Nie moge znależć instrukcji, czy mi ją doślecie?'}
+          answer1={
+            'Zwane popularnie "długimi wiatrówkami" świetnie nadają się do precyzyjnego strzelania na dłuższe dystanse (powyżej 15-20 metrów). Mają większą moc niż wiatrówki pistolety, dłuższą lufę i z tego też względu są zdecydowanie bardziej celne. Wystrzeliwany z nich śrut ma również większe możliwości przebijania celu'
+          }
+        />
+      </div>
+
+      <div className='description__question'>
+        {' '}
+        <h3 className='description__title'>nie znalazłeś odpowiedzi?</h3>
+        <div className='description__ask'>
+          {' '}
+          <p className=' white '>zadaj swoje pytanie</p>
+        </div>
+      </div>
     </div>
   );
 };

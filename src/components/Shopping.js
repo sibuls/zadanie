@@ -150,7 +150,7 @@ const Shopping = () => {
             +
           </span>
         </div>
-        <div className='summary__add' onClick={handleAddToBasket}>
+        <div className='summary__add white' onClick={handleAddToBasket}>
           dodaj do koszyka
         </div>
       </div>

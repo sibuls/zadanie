@@ -8,6 +8,7 @@ import Main from './layout/Main';
 import AutoPlay from './layout/AutoPlay';
 import Description from './layout/Description';
 import Aside from './layout/Aside';
+import Tips from './layout/Tips';
 
 const App = () => {
   //hooks
@@ -71,12 +72,13 @@ const App = () => {
         >
           {' '}
           <Header />
+          <Main />
+          <AutoPlay />{' '}
           <div className='wrapper'>
-            <Main />
-            <AutoPlay />
             <Description />
             <Aside />
           </div>
+          <Tips />
         </AppContext.Provider>
       </div>
     </Router>
