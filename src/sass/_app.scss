@@ -1,3 +1,11 @@
+.app {
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+
+    overflow: hidden;
+  }
+}
+
 .wrapper {
   max-width: 1200px;
 
@@ -7,6 +15,11 @@
   @media (max-width: 1024px) {
     max-width: 1024px;
     padding: 0 $main-padding;
+    overflow: hidden;
+  }
+
+  @media (max-width: 780px) {
+    display: block;
   }
 }
 

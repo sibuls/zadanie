@@ -23,16 +23,15 @@ export default class AutoPlay extends Component {
 
   update = () => {
     this.setState({
-      height: window.innerHeight,
       width: window.innerWidth,
     });
   };
 
   render() {
-    console.log(this.state.height);
-    console.log(this.state.width);
+    // console.log(this.state.height);
+    // console.log(this.state.width);
 
-    let slidesNumber = this.state.height > 1200 ? 3 : 2;
+    let slidesNumber = this.state.width > 1200 ? 3 : 1;
 
     const settings = {
       dots: true,
@@ -47,7 +46,7 @@ export default class AutoPlay extends Component {
 
     return (
       <div className='autoplay'>
-        {/* <p>height: {this.state.height}</p>
+        {/* 
         <p>width: {this.state.width}</p> */}
         <Title text='dobierz do kompletu' />
 

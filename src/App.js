@@ -10,6 +10,7 @@ import Description from './layout/Description';
 import Aside from './layout/Aside';
 import Tips from './layout/Tips';
 import Footer from './layout/Footer';
+import SideBar from './components/Sidebar';
 
 const App = () => {
   //hooks
@@ -72,6 +73,7 @@ const App = () => {
           }}
         >
           {' '}
+          <SideBar pageWrapId={'page-wrap'} outerContainerId={'App'} />
           <Header />
           <Main />
           <AutoPlay />{' '}

@@ -11,6 +11,10 @@
     height: 30px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 780px) {
+      height: 100px;
+    }
   }
   &__container {
     width: 100%;
@@ -22,6 +26,11 @@
       padding: 0 $main-padding;
     }
 
+    @media (max-width: 780px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: $main-padding / 4;
+    }
     &--main {
       flex-direction: column;
     }
@@ -31,6 +40,17 @@
     font-family: $font-montserrat;
     font-size: 11px;
     padding: $main-padding / 3 $main-padding $main-padding / 2 0;
+
+    @media (max-width: 780px) {
+      padding: $main-padding / 4;
+      font-size: 0.6rem;
+    }
+
+    @media (max-width: 480px) {
+      color: rgb(143, 142, 142);
+      padding: $main-padding / 2 $main-padding / 8 $main-padding / 2
+        $main-padding / 2;
+    }
   }
   &__ico {
     color: $red;
@@ -45,5 +65,11 @@
     background-image: url('../images/header/header_bgc.png');
 
     background-position: top center;
+  }
+
+  &__email {
+    @media (max-width: 480px) {
+      order: 3;
+    }
   }
 }

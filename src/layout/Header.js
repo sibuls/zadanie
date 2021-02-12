@@ -54,7 +54,7 @@ const Header = () => {
             <i className='fas fa-phone-volume header__ico'></i>
             <span>Tel: +48 517 989 511</span>
           </div>
-          <div className='header__contact'>
+          <div className='header__contact header__email'>
             {' '}
             <i className='fas fa-envelope header__ico'></i>
             <span>Email: sklep@assasins-arms.com</span>
@@ -65,69 +65,74 @@ const Header = () => {
             <span>assasinsarms</span>
           </div>
         </div>
+
+        <div className='basket__wrapper'>
+          {' '}
+          <div className='basket'>
+            <img src={basket} alt='basket' className='basket__image' />
+            <div className='basket__content'>
+              <div className='basket__rank'>
+                <div className='basket__rank-image'>
+                  <img src={rank} alt='logo-army' />
+                </div>
+                <div className='basket__rank-circle'>
+                  <p> {basketCounter}</p>
+                </div>
+              </div>
+              <div className='basket__summary'>
+                <p className='basket__text'>twój koszyk </p>
+                <p className='basket__total'>
+                  {' '}
+                  {basketToPay.toLocaleString('fr-FR', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}{' '}
+                  zł
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className='header__main'>
         <div className='menu  menu--top'>
           <div className='menu__container'>
-            <div className='menu__logo'>
-              <img
-                src={logo}
-                alt='Assasins Arms Shop logo'
-                className='menu__logo-image'
-              />
-            </div>
-            <form action='' className='menu__search'>
-              <input
-                type='text'
-                placeholder='Wpisz czego szukasz...'
-                className='menu__search-input'
-              />
-              <div className='menu__search-ico'>
-                <i className='fas fa-search'></i>
+            <div className='menu__elements'>
+              {' '}
+              <div className='menu__logo'>
+                <img
+                  src={logo}
+                  alt='Assasins Arms Shop logo'
+                  className='menu__logo-image'
+                />
               </div>
-            </form>
-
-            <form className='menu__language'>
-              <select
-                name='language'
-                id='language-select'
-                className='menu__country'
-                onChange={(e) => handleCheck(e)}
-                // value='sdf'
-              >
-                <option value='PL'>PL 🇵🇱 </option>
-                <option value='GB'>GB 🇬🇧 </option>
-                <option value='DE'>DE 🇩🇪 </option>
-                <option value='FR'>FR 🇫🇷 </option>
-              </select>
-            </form>
-
-            <div className='menu__account'>
-              <SwitchCase value={currentLanguage} />
-            </div>
-            <div className='basket'>
-              <img src={basket} alt='basket' className='basket__image' />
-              <div className='basket__content'>
-                <div className='basket__rank'>
-                  <div className='basket__rank-image'>
-                    <img src={rank} alt='logo-army' />
-                  </div>
-                  <div className='basket__rank-circle'>
-                    <p> {basketCounter}</p>
-                  </div>
+              <form action='' className='menu__search'>
+                <input
+                  type='text'
+                  placeholder='Wpisz czego szukasz...'
+                  className='menu__search-input'
+                />
+                <div className='menu__search-ico'>
+                  <i className='fas fa-search'></i>
                 </div>
-                <div className='basket__summary'>
-                  <p className='basket__text'>twój koszyk </p>
-                  <p className='basket__total'>
-                    {' '}
-                    {basketToPay.toLocaleString('fr-FR', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}{' '}
-                    zł
-                  </p>
-                </div>
+              </form>
+              <form className='menu__language'>
+                <select
+                  name='language'
+                  id='language-select'
+                  className='menu__country'
+                  onChange={(e) => handleCheck(e)}
+                  // value='sdf'
+                >
+                  <option value='PL'>PL 🇵🇱 </option>
+                  <option value='GB'>GB 🇬🇧 </option>
+                  <option value='DE'>DE 🇩🇪 </option>
+                  <option value='FR'>FR 🇫🇷 </option>
+                </select>
+              </form>
+              <div className='menu__account'>
+                <SwitchCase value={currentLanguage} />
               </div>
             </div>
           </div>

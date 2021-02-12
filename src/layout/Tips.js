@@ -12,7 +12,7 @@ const Tips = () => {
         <article className='tips__article'>
           <h3 className='tips__title  '>Jak stworzyć samemu farby do gry?</h3>
           <div className='tips__container'>
-            <div className='tips-box'>
+            <div className='tips__box'>
               <img src={tip1} alt='' />
             </div>
             <div className='tips__content'>
@@ -32,7 +32,7 @@ const Tips = () => {
             Jak dobrać naboje z farbą do mojego sprzętu?
           </h3>
           <div className='tips__container'>
-            <div className='tips-box'>
+            <div className='tips__box'>
               <img src={tip2} alt='' />
             </div>
             <div className='tips__content'>

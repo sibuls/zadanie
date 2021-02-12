@@ -12,6 +12,9 @@
     @media (max-width: 1024px) {
       overflow: hidden;
     }
+    @media (max-width: 780px) {
+      margin: 0 auto;
+    }
   }
 
   &__box {
@@ -77,5 +80,10 @@
   @media (max-width: 1024px) {
     width: 30%;
     // overflow: hidden;
+  }
+  @media (max-width: 780px) {
+    margin-top: $main-padding * 4;
+    width: 100%;
+    display: flex;
   }
 }

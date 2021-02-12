@@ -6,6 +6,11 @@
     width: 75%;
 
     line-height: 1.5rem;
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+      line-height: 1.1rem;
+    }
   }
 
   &__gallery {
@@ -17,6 +22,14 @@
 
     @media (max-width: 1024px) {
       width: 60%;
+    }
+    @media (max-width: 780px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 
@@ -35,6 +48,11 @@
     &:hover {
       border: none;
       border-bottom: 3px solid $red;
+    }
+
+    @media (max-width: 480px) {
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -118,6 +136,7 @@
 .summary {
   padding: $main-padding 0;
   display: flex;
+
   justify-content: space-between;
   // border: 1px dotted green;
   &__price {
@@ -131,6 +150,10 @@
       font-size: 1.6rem;
       font-weight: 700;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+      padding: $main-padding 0;
+    }
   }
 
   &__counter {
@@ -140,6 +163,10 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
+    @media (max-width: 480px) {
+      width: 30%;
+      padding: $main-padding / 2 0;
+    }
   }
 
   &__btn {
@@ -156,6 +183,15 @@
     width: 35%;
     text-transform: uppercase;
     cursor: pointer;
+
+    @media (max-width: 480px) {
+      width: 55%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 

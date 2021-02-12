@@ -24,6 +24,11 @@
       max-width: 1024px;
       padding: 0 $main-padding * 2;
     }
+
+    @media (max-width: 1024px) {
+      margin: 1rem;
+      padding: 0 $main-padding / 2;
+    }
   }
 
   &__info {
@@ -36,6 +41,10 @@
   &__logo {
     text-align: center;
     padding-top: $main-padding;
+
+    @media (max-width: 1024px) {
+      padding-top: 0;
+    }
   }
 
   &__ground-grey {
@@ -103,6 +112,13 @@
       font-size: 0.6rem;
       line-height: 1.4rem;
     }
+
+    @media (max-width: 780px) {
+      font-size: 0.6rem;
+      line-height: 1.4rem;
+      width: 50%;
+      margin-bottom: $main-padding / 2;
+    }
   }
 
   &__title {
@@ -114,6 +130,9 @@
 
     @media (max-width: 1024px) {
       font-size: 0.8rem;
+    }
+    @media (max-width: 1024px) {
+      padding-bottom: $main-padding / 4;
     }
   }
 
