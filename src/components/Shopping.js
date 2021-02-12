@@ -176,6 +176,7 @@ const Shopping = () => {
             <p className='text-side'>dla zamówień powyżej 600 zł</p>
           </div>
         </div>
+
         <div className='box__return box__container'>
           <i class='fas fa-undo ico-normal'></i>
 
@@ -184,14 +185,15 @@ const Shopping = () => {
             <p className='text-side'>do 14 dni od daty zakupu</p>
           </div>
         </div>
+
         <div className='box__installment box__container'>
           <i class='fas fa-percent ico-normal'></i>
           <div className='box__content'>
-            {' '}
             <p className='text bold'>zakupy na raty</p>
             <p className='red'>oblicz ratę >></p>
           </div>
         </div>
+
         <div className='box__warranty box__container'>
           <i class='fas fa-award ico-normal'></i>
           <div className='box__content'>

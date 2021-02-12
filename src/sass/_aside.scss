@@ -8,6 +8,10 @@
   &__container {
     // border: 2px dotted rgb(1, 10, 18);
     background: #fff;
+
+    @media (max-width: 1024px) {
+      overflow: hidden;
+    }
   }
 
   &__box {
@@ -68,5 +72,10 @@
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: -1;
+  }
+
+  @media (max-width: 1024px) {
+    width: 30%;
+    // overflow: hidden;
   }
 }

@@ -4,7 +4,7 @@
   width: 100vw;
 
   max-width: 1900px;
-  margin: 150px auto 0;
+  margin: 100px auto 0;
   // border: 3px red dotted;
 
   &__wrapper {
@@ -19,6 +19,11 @@
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 0%);
+
+    @media (max-width: 1024px) {
+      max-width: 1024px;
+      padding: 0 $main-padding * 2;
+    }
   }
 
   &__info {
@@ -91,7 +96,13 @@
     color: rgb(167, 167, 167);
     font-size: 0.8rem;
     line-height: 1.8rem;
+
     font-family: $font-lato;
+
+    @media (max-width: 1024px) {
+      font-size: 0.6rem;
+      line-height: 1.4rem;
+    }
   }
 
   &__title {
@@ -100,6 +111,10 @@
     text-align: left;
     padding-bottom: $main-padding / 2;
     font-size: 1rem;
+
+    @media (max-width: 1024px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__email {
@@ -107,11 +122,18 @@
     // color: rgb(167, 167, 167);
     color: #fff;
     font-size: 1rem;
+    @media (max-width: 1024px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__number {
     font-size: 1.5rem;
     color: #fff;
+
+    @media (max-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
 
   & li {
@@ -133,6 +155,10 @@
       color: $red;
       padding-right: $main-padding * 2;
       cursor: pointer;
+
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
