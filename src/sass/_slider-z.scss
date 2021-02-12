@@ -58,8 +58,6 @@ h3 {
 
 .each-fade .image-container img {
   width: 100%;
-  // border: 2px rgb(106, 12, 114) dotted;
-  // background-color: rgb(20, 64, 121);
 }
 
 .each-fade h2 {
@@ -68,6 +66,8 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0;
+  // border: red dotted 2px;
+
   // background: #adceed;
 }
 
@@ -87,19 +87,18 @@ h3 {
   border: 1px lightgrey solid;
 
   &__container {
-    // width: 200px;
+    // border: 2px rgb(22, 136, 64) dotted;
   }
 }
 
 .indicator.active {
-  //   background: #000;
+  // background: #000;
   color: #fff;
   border: none;
   border-bottom: 3px $red solid;
 }
 
 .slide__img {
-  // width: 200px;
 }
 
 .slide__image-large {

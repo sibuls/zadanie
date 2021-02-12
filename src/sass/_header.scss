@@ -43,13 +43,13 @@
 
     @media (max-width: 780px) {
       padding: $main-padding / 4;
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
 
     @media (max-width: 480px) {
       color: rgb(143, 142, 142);
-      padding: $main-padding / 2 $main-padding / 8 $main-padding / 2
-        $main-padding / 2;
+      padding: $main-padding / 4 $main-padding / 8 $main-padding / 4
+        $main-padding / 4;
     }
   }
   &__ico {
@@ -68,8 +68,20 @@
   }
 
   &__email {
+    &-mobile {
+      display: none;
+    }
+
     @media (max-width: 480px) {
       order: 3;
+
+      &-desktop {
+        display: none;
+      }
+
+      &-mobile {
+        display: inline;
+      }
     }
   }
 }

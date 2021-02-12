@@ -57,7 +57,12 @@ const Header = () => {
           <div className='header__contact header__email'>
             {' '}
             <i className='fas fa-envelope header__ico'></i>
-            <span>Email: sklep@assasins-arms.com</span>
+            <span className='header__email-desktop'>
+              Email: sklep@assasins-arms.com
+            </span>
+            <span className='header__email-mobile'>
+              sklep@assasins-arms.com
+            </span>
           </div>
           <div className='header__contact'>
             {' '}
